@@ -490,7 +490,15 @@ public class FeriaEmpresarial {
      * @return respuesta2
      */
     public String metodo2() {
-        return "Respuesta 2";
+
+        String respuesta2;
+        if (porcentajeOcupacion()>=60){
+            respuesta2 = "El punto de equilibrio se ha cumplido";
+        }else{
+            respuesta2 = "El punto de equilibrio no se ha cumplido";
+        }
+
+        return respuesta2;
     }
 
 }
